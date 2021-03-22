@@ -5,7 +5,7 @@ GO
 create table Carreras(
     ID varchar(4) not null primary key,
     Nombre varchar(30) not null,
-    FechaCreación datetime not null check (FechaCreación <= getdate() ),
+    FechaCreaciÃ³n datetime not null check (FechaCreaciÃ³n <= getdate() ),
     Mail varchar(100) not null,
 	Nivel varchar(20) not null check (nivel = 'diplomatura' or nivel = 'pregrado' or nivel = 'grado' or nivel = 'postgrado')
 )
